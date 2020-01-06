@@ -1,0 +1,13 @@
+<h3 class="article__title">What's Happening</h3>
+<ul *ngIf="articles" class="article__list">
+    <li *ngFor="let article of articles" class="article__story">
+        <div class="article__story-img-wrapper">
+            <div class="article__story-img" [ngStyle]="{ 'background-image': 'url(' + article?.imagePath + ')'}">
+                <div class="article__story-date">{{article.date}}</div>
+                <h4 class="article__story-title">{{article.title}}</h4>
+                <div class="article__story-location">{{article.location}}</div>
+            </div>
+            <div class="article__story-img-filter"></div>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,30 @@
+.header {
+    background-color: #ffffff;
+    height: 50px;
+    padding: 10px;
+
+    &__notifications,
+    &__wifi {
+        float: right;
+    }
+
+    &__wifi {
+        visibility: hidden;
+    }
+}
+
+/*=====================MEDIA QUERIES========================*/
+
+@media screen and (max-width: 600px){
+
+    .header {
+
+        &__notifications {
+            visibility: hidden;
+        }
+
+        &__wifi {
+            visibility: visible;
+        }
+    }
+}

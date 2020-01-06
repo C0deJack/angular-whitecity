@@ -1,0 +1,33 @@
+.aside {
+    background-color: #f1f1f1;
+    width: 40%;
+    height: 2500px;
+    padding-top: 10px;
+
+    &__title {
+        font-size: 20px;
+        padding-left: 10px;
+        color: #3c3f47;
+    }
+
+    &__offer {
+        background-color: #ffffff;
+        margin: 6px;
+        width: 95%;
+        height: 115px;
+        border-radius: 5px;
+        display: inline-block;
+        position: relative;
+        padding: 10px;
+        color: #3c3f47;
+    }
+}
+
+/*=====================MEDIA QUERIES========================*/
+
+@media screen and (max-width: 900px){
+
+    aside {
+        width: 100%;
+    }
+}

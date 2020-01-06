@@ -1,0 +1,10 @@
+<div *ngIf="weather" class="weather">
+    <span class="weather__desc">{{weather.current.weather_descriptions[0]}}</span>
+    <img class="weather__icon" src={{weather.current.weather_icons[0]}} alt="weather icon">
+    <span class="weather__temp">
+        <span class="weather__temp-value">{{weather.current.temperature}}</span>
+        <span class="weather__temp-unit">°C</span>
+    </span>
+    <span class="weather__date">{{weather.location.localtime | date:'EEEE d LLL'}}</span>
+    <span class="weather__location">{{weather.location.name}}</span>
+</div>
